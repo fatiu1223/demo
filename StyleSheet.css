@@ -1,0 +1,215 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body 
+{
+background-image: url("img/consumer-woman-hand-using-laptop-for-online-shopping-according-to-discount-products-from-home.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+ justify-content: center;
+ font-family: montserrat;
+ background-position: center;
+}
+p {
+color: black;
+font-size: 15px;
+font-weight: 900;
+
+}
+h3 {
+	color: gold;
+	font-weight: bold; 
+	font-size: xx-large
+}
+/*header*/
+
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+     padding: 0 100px; 
+    font-weight: bold;
+}
+nav {
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+.Created {
+font-weight: 600;
+	font-style: italic;
+	text-decoration: underline;
+}
+#login {
+	text-align: center;
+
+}
+.page {
+text-align: center;
+    color: black;
+    background: transparent;
+    border-radius: 15px;
+	width : 50%;
+	height: 50%;
+  font-size: 18px;
+  float: right;
+  padding: 30px;
+  margin-right: 25%;
+  outline: none;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+.submitButton:hover
+{
+	 
+    background-color: gold;
+}
+button.submitButton {
+width: 100px;
+height: 50px;
+text-align: center;
+border-radius: 20px;
+background: blue;
+border: none;
+transition: 0.5s linear;
+font-size: 20px;
+padding-bottom: 5px;
+
+}
+
+button.submitButton:hover{
+color: gold;
+}
+
+
+
+input {
+  overflow: hidden;
+}
+ input {
+  width: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 19px;
+ font-weight: 600;
+  outline: none;
+  border-bottom: 2px solid #22b68c;
+ border-radius: 10px;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+}
+
+@media(max-width: 110px) {
+	#login {
+		padding-left: 50px;
+		display: block;
+	} 
+	
+
+.page {
+	position: fixed;
+	width: 200%;
+	height: 100vh;
+	background: #2c3e50;
+	top: 80px;
+	right: -100%;
+	text-align: center;
+	transition: all .5s;
+}
+}
+@media (max-width: 952px) {
+    label .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
